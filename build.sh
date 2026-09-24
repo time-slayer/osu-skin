@@ -7,3 +7,5 @@ skin_name="$(basename "${1:-skin}").osk"
 rm -f "$skin_name"
 cd skin || exit 1
 zip -qr "../$skin_name" .
+
+echo "Successfully built: $skin_name"
